@@ -5,7 +5,7 @@
 
 "http://{default}/":
     type: upstream
-    upstream: "php:http"
+    upstream: "app:http"
 
 "http://www.{default}/":
     type: redirect
