@@ -119,3 +119,6 @@ codekit-config.json
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+
+## Platform.sh local files
+.platform/local
