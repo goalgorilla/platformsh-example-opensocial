@@ -16,7 +16,7 @@
         "cweagans/composer-patches": "1.5.0",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
-        "goalgorilla/open_social": "dev-8.x-1.x"
+        "goalgorilla/open_social": "^1.0"
     },
     "repositories": [
         {
