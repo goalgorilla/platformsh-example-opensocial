@@ -85,7 +85,7 @@ hooks:
     # We run deploy hook after your application has been deployed and started.
     # @TODO Re-import configuration
     deploy: |
-      cd html
+      cd web
       drush -y cache-rebuild
       drush -y updatedb
       drush -y fra --bundle=social
@@ -96,4 +96,4 @@ hooks:
 crons:
     drupal_cron1:
         spec: "*/5 * * * *"
-        cmd: "cd html ; drush core-cron"
+        cmd: "cd web ; drush core-cron"
