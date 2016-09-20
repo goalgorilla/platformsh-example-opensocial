@@ -66,8 +66,8 @@ class Platformify {
    * Copy the Platformified settings files into place.
    */
   protected static function copySettingsFiles() {
-    copy(static::getProjectRoot() . '/scripts/platformsh/dist.settings.php', static::getProjectRoot() . '/html/sites/default/settings.php');
-    copy(static::getProjectRoot() . '/scripts/platformsh/dist.settings.platformsh.php', static::getProjectRoot() . '/html/sites/default/settings.platformsh.php');
+    copy(static::getProjectRoot() . '/scripts/platformsh/dist.settings.php', static::getProjectRoot() . '/web/sites/default/settings.php');
+    copy(static::getProjectRoot() . '/scripts/platformsh/dist.settings.platformsh.php', static::getProjectRoot() . '/web/sites/default/settings.platformsh.php');
   }
 
   /**
@@ -113,7 +113,7 @@ class Platformify {
    *   The path to the docroot.
    */
   protected static function getDocRoot() {
-    return static::getProjectRoot() . '/html';
+    return static::getProjectRoot() . '/web';
   }
 
   /**
