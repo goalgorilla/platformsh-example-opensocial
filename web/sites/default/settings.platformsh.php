@@ -27,20 +27,30 @@ if (isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
         $databases['default']['default'] = $database;
       }
       else {
-        $databases['default']['slave'][] = $database;
+        $databases['default']['replica'][] = $database;
       }
     }
   }
 }
 
-// Configure private and temporary file paths.
 if (isset($_ENV['PLATFORM_APP_DIR'])) {
+
+  // Configure private and temporary file paths.
   if (!isset($settings['file_private_path'])) {
     $settings['file_private_path'] = $_ENV['PLATFORM_APP_DIR'] . '/private';
   }
   if (!isset($config['system.file']['path']['temporary'])) {
     $config['system.file']['path']['temporary'] = $_ENV['PLATFORM_APP_DIR'] . '/tmp';
   }
+
+  // Configure the default PhpStorage and Twig template cache directories.
+  if (!isset($settings['php_storage']['default'])) {
+    $settings['php_storage']['default']['directory'] = $settings['file_private_path'];
+  }
+  if (!isset($settings['php_storage']['twig'])) {
+    $settings['php_storage']['twig']['directory'] = $settings['file_private_path'];
+  }
+
 }
 
 // Set trusted hosts based on Platform.sh routes.
