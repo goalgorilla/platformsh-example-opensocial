@@ -4,5 +4,5 @@ git fetch --all
 git merge -X theirs --squash dc/8.x
 git reset README.md
 git checkout -- README.md
-php dev-scripts/platformsh/Platformify.php
+php scripts/platformsh/Platformify.php
 git add .
