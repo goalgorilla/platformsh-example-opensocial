@@ -28,7 +28,7 @@ How to use:
     git push -u platform master
     ````
 
-6. Install the site with the script in scripts/social/install.sh.
+6. Install the site using the UI interface from the project URL on platform.sh
 
 7. Now go and develop this your custom Open Social site.
     Remember you can add custom modules, themes etc by placing this in either html/modules/custom or html/themes/custom.
