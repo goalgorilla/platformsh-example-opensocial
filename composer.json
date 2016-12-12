@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "autoload": {
         "classmap": [
-            "dev-scripts/composer/ScriptHandler.php"
+            "scripts/composer/ScriptHandler.php"
         ]
     },
     "require": {
@@ -16,7 +16,8 @@
         "cweagans/composer-patches": "1.5.0",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
-        "goalgorilla/open_social": "^1.0"
+        "goalgorilla/open_social": "^1.0",
+        "goalgorilla/open_social_scripts": "dev-master"
     },
     "repositories": [
         {
@@ -51,6 +52,9 @@
             ],
             "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
+            ],
+            "scripts/{$name}": [
+                "goalgorilla/open_social_scripts"
             ],
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
