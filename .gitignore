@@ -10,6 +10,7 @@ web/sites/*/settings.local.php
 web/sites/default/settings.docker.php
 web/sites/*/private
 web/sites/simpletest
+scripts/social
 
 # These will be created by DrupalComposer. #
 ############################################
