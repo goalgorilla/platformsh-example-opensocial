@@ -13,7 +13,7 @@
     "require": {
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "cweagans/composer-patches": "1.5.0",
+        "cweagans/composer-patches": "^1.0",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
         "goalgorilla/open_social": "^1.0"
