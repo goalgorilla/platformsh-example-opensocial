@@ -2231,11 +2231,17 @@
         },
         {
             "name": "drupal/flag",
-            "version": "dev-4.x",
+            "version": "4.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/flag",
-                "reference": "4f9093a3da47d95dae1a3696309a0741e667dc3d"
+                "reference": "8.x-4.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flag-8.x-4.0-alpha2.zip",
+                "reference": null,
+                "shasum": "e9ead06aadc9d26364b9ad1225354b0c47d5ce02"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2246,8 +2252,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-alpha2+7-dev",
-                    "datestamp": "1497044041"
+                    "version": "8.x-4.0-alpha2",
+                    "datestamp": "1494517385"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2292,8 +2298,7 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "http://cgit.drupalcode.org/flag"
-            },
-            "time": "2017-06-09 22:01:59"
+            }
         },
         {
             "name": "drupal/group",
@@ -3461,16 +3466,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.0.0-rc6",
+            "version": "1.0.0-rc7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "b81a1d486ec5ac3c74769716e72fd0103d38827f"
+                "reference": "83cf499859a4ed2ddfea1856443889f3435008a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/b81a1d486ec5ac3c74769716e72fd0103d38827f",
-                "reference": "b81a1d486ec5ac3c74769716e72fd0103d38827f",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/83cf499859a4ed2ddfea1856443889f3435008a4",
+                "reference": "83cf499859a4ed2ddfea1856443889f3435008a4",
                 "shasum": ""
             },
             "require": {
@@ -3491,7 +3496,7 @@
                 "drupal/entity": "1.0-alpha4",
                 "drupal/features": "3.5",
                 "drupal/field_group": "1.0-rc6",
-                "drupal/flag": "4.x-dev#85f84c17cd4c3f822a2b07dff5cc50b77b0dda25",
+                "drupal/flag": "4.0-alpha2",
                 "drupal/group": "1.0-rc1",
                 "drupal/image_widget_crop": "1.5",
                 "drupal/libraries": "3.x-dev#dcd717dc541293ae5c4003f304921cca9200728c",
@@ -3533,7 +3538,7 @@
                 "GPL-2.0+"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2017-06-19T10:25:44+00:00"
+            "time": "2017-06-20T12:19:18+00:00"
         },
         {
             "name": "google/apiclient",
@@ -5201,16 +5206,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.6",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7028d6d525fb183d50b249b7c07598e3d386b27d"
+                "reference": "be969b9dc89dcaefdb9a3117fa91fa38bca19f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7028d6d525fb183d50b249b7c07598e3d386b27d",
-                "reference": "7028d6d525fb183d50b249b7c07598e3d386b27d",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/be969b9dc89dcaefdb9a3117fa91fa38bca19f50",
+                "reference": "be969b9dc89dcaefdb9a3117fa91fa38bca19f50",
                 "shasum": ""
             },
             "require": {
@@ -5270,7 +5275,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-06-04T10:34:20+00:00"
+            "time": "2017-06-20T12:51:31+00:00"
         },
         {
             "name": "stack/builder",
