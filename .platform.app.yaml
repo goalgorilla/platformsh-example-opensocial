@@ -46,6 +46,9 @@ web:
             # (Can be true, false or a URI path string.)
             passthru: "/index.php"
 
+            # Deny access to static files in this location.
+            allow: false
+
             # Rules for specific URI patterns.
             rules:
                 # Allow access to common static files.
