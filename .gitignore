@@ -26,6 +26,7 @@ web/index.php
 web/robots.txt
 web/update.php
 web/web.config
+web/.ht.router.php
 
 # Compiled source #
 ###################
