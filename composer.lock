@@ -2118,6 +2118,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Dropdown toggle variable ignored when using links__dropbutton": "https://www.drupal.org/files/issues/2018-12-19/dropdown-without-default-button-3021413-2.patch",
                     "JSDeliver issues unsupported operand types": "https://www.drupal.org/files/issues/2019-01-24/3027569-8.x-3.x-8.patch"
                 }
             },
@@ -2975,21 +2976,21 @@
         },
         {
             "name": "drupal/devel",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "cf5fb816f767f3cac4f2e170ab39e982d5e0698b"
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "8f735892922aa5f228e681e645e5f02b1c008f14"
             },
             "require": {
                 "drupal/core": "~8.0",
-                "symfony/var-dumper": "~2.7|^3"
+                "symfony/var-dumper": "~2.7|^3|^4"
             },
             "type": "drupal-module",
             "extra": {
@@ -2997,8 +2998,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1548799380",
+                    "version": "8.x-2.1",
+                    "datestamp": "1556799496",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3736,7 +3737,9 @@
                 },
                 "patches_applied": {
                     "Add computed field for Group reference": "https://www.drupal.org/files/issues/add-computed-field-without-FieldItemListComputedInterface-2718195-34.patch",
-                    "Add permission to view group overview": "https://www.drupal.org/files/issues/group-2943564-2.patch"
+                    "Add permission to view group overview": "https://www.drupal.org/files/issues/group-2943564-2.patch",
+                    "Use VBO together with group permission": "https://www.drupal.org/files/issues/2018-12-18/vbo-and-group-permission-3020883-5.patch",
+                    "Ability to use group tokens in node context": "https://www.drupal.org/files/issues/2018-12-19/group-2774827-41-gnode-tokens.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5687,16 +5690,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "5.3.0",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "3905f8520d4334ac1ea7bcc13e3c863d5f3d69e6"
+                "reference": "6ea7a9b0c900f61137ecefa29c9f36b00aec3f90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/3905f8520d4334ac1ea7bcc13e3c863d5f3d69e6",
-                "reference": "3905f8520d4334ac1ea7bcc13e3c863d5f3d69e6",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/6ea7a9b0c900f61137ecefa29c9f36b00aec3f90",
+                "reference": "6ea7a9b0c900f61137ecefa29c9f36b00aec3f90",
                 "shasum": ""
             },
             "require": {
@@ -5724,7 +5727,7 @@
                 "drupal/csv_serialization": "1.4.0",
                 "drupal/ctools": "3.0",
                 "drupal/data_policy": "^1.0",
-                "drupal/devel": "2.0",
+                "drupal/devel": "2.1",
                 "drupal/dynamic_entity_reference": "1.7",
                 "drupal/embed": "1.0",
                 "drupal/entity": "1.0-rc2",
@@ -5821,6 +5824,9 @@
                     "drupal/bootstrap": {
                         "Dropdown toggle variable ignored when using links__dropbutton": "https://www.drupal.org/files/issues/2018-12-19/dropdown-without-default-button-3021413-2.patch",
                         "JSDeliver issues unsupported operand types": "https://www.drupal.org/files/issues/2019-01-24/3027569-8.x-3.x-8.patch"
+                    },
+                    "drupal/message": {
+                        "Notice: Undefined index: value in MessageTemplate->getText()": "https://www.drupal.org/files/issues/2018-09-16/undefined-index-value-3000026-2.patch"
                     }
                 }
             },
@@ -5835,7 +5841,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2019-05-08T19:15:07+00:00"
+            "time": "2019-05-09T10:17:28+00:00"
         },
         {
             "name": "google/apiclient",
