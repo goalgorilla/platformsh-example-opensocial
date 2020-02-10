@@ -15,7 +15,7 @@
         "drupal-composer/drupal-scaffold": "2.5.0",
         "cweagans/composer-patches": "^1.0",
         "drupal/console":"~1.0",
-        "goalgorilla/open_social": "^7.0",
+        "goalgorilla/open_social": "~8.0",
         "doctrine/lexer": "1.0.2"
     },
     "repositories": [
