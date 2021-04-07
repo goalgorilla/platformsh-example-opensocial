@@ -397,12 +397,12 @@
             "version": "v1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stream-filter.git",
+                "url": "https://github.com/clue/stream-filter.git",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "shasum": ""
             },
@@ -707,6 +707,16 @@
                 "yawik",
                 "zend",
                 "zikula"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-04-07T06:57:05+00:00"
         },
@@ -1847,12 +1857,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1559642884",
+                    "datestamp": "1582913039",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1875,6 +1882,10 @@
                 {
                     "name": "googletorp",
                     "homepage": "https://www.drupal.org/user/386230"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
                 },
                 {
                     "name": "mglaman",
@@ -1906,13 +1917,10 @@
                 "shasum": "fed1fbbdf8f805b1da63d73e7e2c54750f354d61"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.27",
                     "datestamp": "1558553350",
@@ -2058,13 +2066,10 @@
                 "shasum": "0cd9849aa28eea822e18555107e4539d755d95ef"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.0-alpha6",
                     "datestamp": "1550449381",
@@ -2082,6 +2087,10 @@
                 {
                     "name": "Etroid",
                     "homepage": "https://www.drupal.org/user/3048985"
+                },
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
                 },
                 {
                     "name": "chr.fritsch",
@@ -2125,15 +2134,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha8",
                     "datestamp": "1536732480",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
@@ -2145,6 +2151,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
@@ -2160,6 +2170,10 @@
                 {
                     "name": "michaellander",
                     "homepage": "https://www.drupal.org/user/636494"
+                },
+                {
+                    "name": "paulocs",
+                    "homepage": "https://www.drupal.org/user/3640109"
                 }
             ],
             "description": "Provides a field that allows a content entity to create and configure custom block instances.",
@@ -2187,12 +2201,9 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.20",
-                    "datestamp": "1561055630",
+                    "datestamp": "1574417581",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2247,13 +2258,10 @@
                 "shasum": "04bbd0fc440017fd0129dceae240a8bba409a450"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1545090480",
@@ -2280,7 +2288,7 @@
             "description": "Provides basic revert and update functionality for other modules",
             "homepage": "https://www.drupal.org/project/config_update",
             "support": {
-                "source": "http://cgit.drupalcode.org/config_update"
+                "source": "https://git.drupalcode.org/project/config_update"
             }
         },
         {
@@ -2803,13 +2811,10 @@
                 "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
                     "datestamp": "1516357085",
@@ -2832,6 +2837,10 @@
                     "homepage": "https://www.drupal.org/user/3260690"
                 },
                 {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
                     "name": "slashrsm",
                     "homepage": "https://www.drupal.org/user/744628"
                 },
@@ -2843,7 +2852,7 @@
             "description": "Provides storage and API for image crops.",
             "homepage": "https://www.drupal.org/project/crop",
             "support": {
-                "source": "http://cgit.drupalcode.org/crop",
+                "source": "https://git.drupalcode.org/project/crop",
                 "issues": "https://www.drupal.org/project/issues/crop"
             }
         },
@@ -2871,9 +2880,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.0-beta1",
                     "datestamp": "1568995088",
@@ -2918,9 +2924,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.2",
                     "datestamp": "1550728386",
@@ -3007,13 +3010,10 @@
                 "shasum": "d7e8887ad2b4215e037d1d499c8677a9f247a325"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-beta6",
                     "datestamp": "1562252586",
@@ -3029,12 +3029,12 @@
             ],
             "authors": [
                 {
-                    "name": "GoalGorilla",
-                    "homepage": "https://www.drupal.org/user/272162"
-                },
-                {
                     "name": "Kingdutch",
                     "homepage": "https://www.drupal.org/user/1868952"
+                },
+                {
+                    "name": "Open Social",
+                    "homepage": "https://www.drupal.org/user/272162"
                 },
                 {
                     "name": "bramtenhove",
@@ -3084,9 +3084,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1556799496",
@@ -3131,14 +3128,6 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
-                },
-                {
-                    "name": "salvis",
-                    "homepage": "https://www.drupal.org/user/82964"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -3164,16 +3153,13 @@
                 "shasum": "48473adb20413babb548a2501e396e66f13c30f2"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1554020884",
+                    "datestamp": "1575458288",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3335,12 +3321,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1559579884",
+                    "datestamp": "1582735747",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3371,6 +3354,10 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
@@ -3401,9 +3388,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1570284187",
@@ -3508,13 +3492,10 @@
             },
             "require": {
                 "drupal/config_update": "^1.4",
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.8",
                     "datestamp": "1536512284",
@@ -3539,6 +3520,10 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
+                    "name": "donquixote",
+                    "homepage": "https://www.drupal.org/user/459338"
+                },
+                {
                     "name": "e2thex",
                     "homepage": "https://www.drupal.org/user/189123"
                 },
@@ -3547,8 +3532,16 @@
                     "homepage": "https://www.drupal.org/user/43670"
                 },
                 {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                },
+                {
                     "name": "jmiccolis",
                     "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
                 },
                 {
                     "name": "mpotter",
@@ -3566,7 +3559,7 @@
             "description": "Enables administrators to package configuration into modules",
             "homepage": "https://www.drupal.org/project/features",
             "support": {
-                "source": "http://cgit.drupalcode.org/features"
+                "source": "https://git.drupalcode.org/project/features"
             }
         },
         {
@@ -3661,9 +3654,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1488273785",
@@ -3686,7 +3676,7 @@
             "description": "Provides a service to manage file metadata.",
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
-                "source": "http://cgit.drupalcode.org/file_mdm"
+                "source": "https://git.drupalcode.org/project/file_mdm"
             }
         },
         {
@@ -3694,16 +3684,13 @@
             "version": "1.1.0",
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/file_mdm": "self.version"
+                "drupal/file_mdm": "*"
             },
             "require-dev": {
                 "drupal/image_effects": "*"
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1488273785",
@@ -3726,7 +3713,7 @@
             "description": "Provides a file metadata plugin for EXIF image information.",
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
-                "source": "http://cgit.drupalcode.org/file_mdm"
+                "source": "https://git.drupalcode.org/project/file_mdm"
             }
         },
         {
@@ -3734,16 +3721,13 @@
             "version": "1.1.0",
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/file_mdm": "self.version"
+                "drupal/file_mdm": "*"
             },
             "require-dev": {
                 "drupal/image_effects": "*"
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1488273785",
@@ -3766,7 +3750,7 @@
             "description": "Provides a file metadata plugin for TTF/OTF/WOFF font information.",
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
-                "source": "http://cgit.drupalcode.org/file_mdm"
+                "source": "https://git.drupalcode.org/project/file_mdm"
             }
         },
         {
@@ -3791,12 +3775,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-4.0-alpha3",
-                    "datestamp": "1521598850",
+                    "datestamp": "1572442085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3811,6 +3792,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
@@ -3847,7 +3832,7 @@
             "description": "Create customized flags that users can set on entities.",
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
-                "source": "http://cgit.drupalcode.org/flag"
+                "source": "https://git.drupalcode.org/project/flag"
             }
         },
         {
@@ -4047,9 +4032,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.3",
                     "datestamp": "1547928180",
@@ -4076,7 +4058,7 @@
             "description": "Provides effects and operations for the Image API.",
             "homepage": "https://www.drupal.org/project/image_effects",
             "support": {
-                "source": "http://cgit.drupalcode.org/image_effects"
+                "source": "https://git.drupalcode.org/project/image_effects"
             }
         },
         {
@@ -4094,7 +4076,7 @@
                 "shasum": "0a61cfedc409c5ef448174f26060cd6c291d6a11"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/crop": "^1.0 || ^2.0"
             },
             "require-dev": {
@@ -4107,9 +4089,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1530698921",
@@ -4135,6 +4114,10 @@
                 {
                     "name": "Drupal media CI",
                     "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -4173,13 +4156,10 @@
                 "shasum": "656cf7dc3d54d81c5d6b227c550823a1720a5bc7"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.0",
                     "datestamp": "1555907887",
@@ -4236,9 +4216,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
                     "datestamp": "1519314784",
@@ -4321,7 +4298,7 @@
             "description": "Include CSS files using <link> element instead of @import.",
             "homepage": "https://www.drupal.org/project/link_css",
             "support": {
-                "source": "http://cgit.drupalcode.org/link_css"
+                "source": "https://git.drupalcode.org/project/link_css"
             },
             "time": "2016-11-08T03:19:30+00:00"
         },
@@ -4404,16 +4381,13 @@
                 "shasum": "873b3d8030d47bd472d75472f293b7631a59eeaf"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "require-dev": {
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1570139286",
@@ -4470,7 +4444,7 @@
                 "shasum": "9acb04a741d80b4ab468d118a242271169d11f00"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/token": "^1.0"
             },
             "require-dev": {
@@ -4485,9 +4459,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1576870683",
@@ -4542,9 +4513,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.4",
                     "datestamp": "1522490884",
@@ -4568,7 +4536,7 @@
             "description": "Allows permissions to be set on each node option such as published and authoring information.",
             "homepage": "https://www.drupal.org/project/override_node_options",
             "support": {
-                "source": "http://cgit.drupalcode.org/override_node_options"
+                "source": "https://git.drupalcode.org/project/override_node_options"
             }
         },
         {
@@ -4607,9 +4575,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1581850829",
@@ -4679,9 +4644,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1575467285",
@@ -4734,16 +4696,13 @@
                 "shasum": "6690079948c3a6f4b36a5ea09bea590cd1db040f"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1527808680",
+                    "datestamp": "1572818586",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4764,18 +4723,30 @@
                     "homepage": "https://www.drupal.org/user/324696"
                 },
                 {
-                    "name": "aburrows",
-                    "homepage": "https://www.drupal.org/user/577844"
+                    "name": "anmolgoyal74",
+                    "homepage": "https://www.drupal.org/user/3560428"
+                },
+                {
+                    "name": "artem_sylchuk",
+                    "homepage": "https://www.drupal.org/user/2511902"
                 },
                 {
                     "name": "edutrul",
                     "homepage": "https://www.drupal.org/user/1621444"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "phjou",
+                    "homepage": "https://www.drupal.org/user/3344054"
                 }
             ],
             "description": "A private message system for users to send messages to each other",
             "homepage": "https://www.drupal.org/project/private_message",
             "support": {
-                "source": "http://cgit.drupalcode.org/private_message"
+                "source": "https://git.drupalcode.org/project/private_message"
             }
         },
         {
@@ -4865,9 +4836,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1533913684",
@@ -4914,7 +4882,7 @@
                     "homepage": "https://www.drupal.org/user/216580"
                 },
                 {
-                    "name": "mikesmullin",
+                    "name": "ms2011",
                     "homepage": "https://www.drupal.org/user/108440"
                 },
                 {
@@ -4951,12 +4919,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1561757585",
+                    "datestamp": "1576656784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5006,9 +4971,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1580498751",
@@ -5201,12 +5163,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1553186885",
+                    "datestamp": "1579113187",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5265,9 +5224,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1501779544",
@@ -5302,6 +5258,10 @@
                 {
                     "name": "himanshu-dixit",
                     "homepage": "https://www.drupal.org/user/3513954"
+                },
+                {
+                    "name": "wells",
+                    "homepage": "https://www.drupal.org/user/2452278"
                 }
             ],
             "description": "Harmonizes social networking services in Drupal",
@@ -5331,9 +5291,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1501779244",
@@ -5363,12 +5320,16 @@
                 {
                     "name": "himanshu-dixit",
                     "homepage": "https://www.drupal.org/user/3513954"
+                },
+                {
+                    "name": "wells",
+                    "homepage": "https://www.drupal.org/user/2452278"
                 }
             ],
             "description": "Allows login using different social networking services",
             "homepage": "https://www.drupal.org/project/social_auth",
             "support": {
-                "source": "http://cgit.drupalcode.org/social_auth"
+                "source": "https://git.drupalcode.org/project/social_auth"
             }
         },
         {
@@ -5393,9 +5354,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1519655459",
@@ -5414,8 +5372,20 @@
             ],
             "authors": [
                 {
+                    "name": "AdamPS",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                },
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
                     "name": "B-Prod",
                     "homepage": "https://www.drupal.org/user/407852"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
                 },
                 {
                     "name": "sbrattla",
@@ -5429,7 +5399,7 @@
             "description": "Swiftmailer",
             "homepage": "https://www.drupal.org/project/swiftmailer",
             "support": {
-                "source": "http://cgit.drupalcode.org/swiftmailer"
+                "source": "https://git.drupalcode.org/project/swiftmailer"
             }
         },
         {
@@ -5451,12 +5421,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1537557481",
+                    "datestamp": "1577708583",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5496,7 +5463,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -5524,9 +5491,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.3",
                     "datestamp": "1583400005",
@@ -5543,23 +5507,27 @@
             "authors": [
                 {
                     "name": "Mladen Todorovic",
-                    "homepage": "https://www.drupal.org/user/2103716",
+                    "homepage": "https://www.drupal.org/user/157725",
                     "email": "mladen.todorovic@burda.com"
                 },
                 {
                     "name": "Christian Fritsch",
-                    "homepage": "https://www.drupal.org/user/404865",
+                    "homepage": "https://www.drupal.org/user/2103716",
                     "email": "christian.fritsch@burda.com"
                 },
                 {
                     "name": "Daniel Bosen",
-                    "homepage": "https://www.drupal.org/user/3453049",
+                    "homepage": "https://www.drupal.org/user/404865",
                     "email": "daniel.bosen@burda.com"
                 },
                 {
                     "name": "Volker Killesreiter",
-                    "homepage": "https://www.drupal.org/user/3511180",
+                    "homepage": "https://www.drupal.org/user/3453049",
                     "email": "killesreiter@burda.com"
+                },
+                {
+                    "name": "thunderbot",
+                    "homepage": "https://www.drupal.org/user/3511180"
                 }
             ],
             "description": "This module offers supporting functionalities to make configuration updates easier.",
@@ -5661,12 +5629,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.4",
-                    "datestamp": "1580924754",
+                    "datestamp": "1582575462",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5811,6 +5776,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
                 {
                     "name": "eaton",
                     "homepage": "https://www.drupal.org/user/16496"
@@ -5990,11 +5959,6 @@
                 "phpunit/phpunit": "^5.7|^6.0|^7.0"
             },
             "type": "library",
-            "extra": {
-                "patches_applied": {
-                    "Issue #3110341: Embedded Vimeo videos are sometimes blocked when hosted on cloud hosting": "https://www.drupal.org/files/issues/2020-01-31/3110341-vendor-fix-vimeo-adapter.patch"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Embed\\": "src"
@@ -6021,7 +5985,12 @@
                 "opengraph",
                 "twitter cards"
             ],
-            "time": "2020-12-24T09:42:20+00:00"
+            "time": "2020-12-24T09:42:20+00:00",
+            "extra": {
+                "patches_applied": {
+                    "Issue #3110341: Embedded Vimeo videos are sometimes blocked when hosted on cloud hosting": "https://www.drupal.org/files/issues/2020-01-31/3110341-vendor-fix-vimeo-adapter.patch"
+                }
+            }
         },
         {
             "name": "facebook/graph-sdk",
@@ -8240,16 +8209,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.30",
+            "version": "2.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36"
+                "reference": "233a920cb38636a43b18d428f9a8db1f0a1a08f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
-                "reference": "136b9ca7eebef78be14abf90d65c5e57b6bc5d36",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/233a920cb38636a43b18d428f9a8db1f0a1a08f4",
+                "reference": "233a920cb38636a43b18d428f9a8db1f0a1a08f4",
                 "shasum": ""
             },
             "require": {
@@ -8341,7 +8310,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-17T05:42:04+00:00"
+            "time": "2021-04-06T13:56:45+00:00"
         },
         {
             "name": "psr/cache",
@@ -11176,12 +11145,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
