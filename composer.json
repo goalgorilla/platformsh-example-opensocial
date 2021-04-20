@@ -11,12 +11,9 @@
         ]
     },
     "require": {
-        "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "2.5.0",
-        "cweagans/composer-patches": "^1.0",
-        "drupal/console":"~1.0",
-        "goalgorilla/open_social": "^9.0",
-        "doctrine/lexer": "1.0.2"
+        "goalgorilla/open_social": "~10.0.7",
+        "php": "^7.2",
+        "monolog/monolog": "^1.17"
     },
     "repositories": [
         {
@@ -28,18 +25,12 @@
             "url": "https://asset-packagist.org"
         }
     ],
-    "scripts": {
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "post-install-cmd": [
-            "@composer drupal-scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "@composer drupal-scaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
     "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
@@ -69,7 +60,10 @@
                 "type:drupal-drush"
             ]
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        }
     },
     "replace": {
         "drupal/drupal": "*"

@@ -125,3 +125,5 @@ atlassian-ide-plugin.xml
 
 ## Platform.sh local files
 .platform/local
+/.editorconfig
+/.gitattributes
