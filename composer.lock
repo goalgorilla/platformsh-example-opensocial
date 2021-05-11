@@ -56,10 +56,6 @@
                 "cors",
                 "stack"
             ],
-            "support": {
-                "issues": "https://github.com/asm89/stack-cors/issues",
-                "source": "https://github.com/asm89/stack-cors/tree/1.3.0"
-            },
             "time": "2019-12-24T22:41:47+00:00"
         },
         {
@@ -331,10 +327,6 @@
                 "zend",
                 "zikula"
             ],
-            "support": {
-                "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.11.0"
-            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -410,11 +402,6 @@
                 "validation",
                 "versioning"
             ],
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/1.7.2"
-            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -473,10 +460,6 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "support": {
-                "issues": "https://github.com/cweagans/composer-patches/issues",
-                "source": "https://github.com/cweagans/composer-patches/tree/1.7.0"
-            },
             "time": "2020-09-30T17:56:20+00:00"
         },
         {
@@ -628,10 +611,6 @@
                 "redis",
                 "xcache"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.11.0"
-            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -711,10 +690,6 @@
                 "iterators",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/collections/issues",
-                "source": "https://github.com/doctrine/collections/tree/1.6.7"
-            },
             "time": "2020-07-27T17:53:49+00:00"
         },
         {
@@ -798,10 +773,6 @@
                 "doctrine",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/common/issues",
-                "source": "https://github.com/doctrine/common/tree/2.13.x"
-            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -892,10 +863,6 @@
                 "event system",
                 "events"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/event-manager/issues",
-                "source": "https://github.com/doctrine/event-manager/tree/1.1.x"
-            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1170,10 +1137,6 @@
                 "orm",
                 "persistence"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/persistence/issues",
-                "source": "https://github.com/doctrine/persistence/tree/1.3.x"
-            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1266,10 +1229,6 @@
                 "reflection",
                 "static"
             ],
-            "support": {
-                "issues": "https://github.com/doctrine/reflection/issues",
-                "source": "https://github.com/doctrine/reflection/tree/1.2.2"
-            },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
         },
@@ -1296,9 +1255,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1582913039",
+                    "datestamp": "1559642884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1321,10 +1283,6 @@
                 {
                     "name": "googletorp",
                     "homepage": "https://www.drupal.org/user/386230"
-                },
-                {
-                    "name": "jsacksick",
-                    "homepage": "https://www.drupal.org/user/972218"
                 },
                 {
                     "name": "mglaman",
@@ -1356,10 +1314,13 @@
                 "shasum": "fed1fbbdf8f805b1da63d73e7e2c54750f354d61"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.27",
                     "datestamp": "1558553350",
@@ -1529,6 +1490,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Fix display mode issue": "https://www.drupal.org/files/issues/2021-03-19/ajax_comments-ajax_not_working_when_using_non_default_view_mode-2896916-beta3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1586,10 +1550,13 @@
                 "shasum": "0cd9849aa28eea822e18555107e4539d755d95ef"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.0-alpha6",
                     "datestamp": "1550449381",
@@ -1607,10 +1574,6 @@
                 {
                     "name": "Etroid",
                     "homepage": "https://www.drupal.org/user/3048985"
-                },
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/user/3580850"
                 },
                 {
                     "name": "chr.fritsch",
@@ -1654,13 +1617,19 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-alpha8",
                     "datestamp": "1536732480",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Add pre-render hooks to be able to alter content": "https://www.drupal.org/files/issues/2018-06-11/block_field-add-proper-alter-hooks-for-field-rendering-2978883-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1668,10 +1637,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
                 {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
@@ -1687,10 +1652,6 @@
                 {
                     "name": "michaellander",
                     "homepage": "https://www.drupal.org/user/636494"
-                },
-                {
-                    "name": "paulocs",
-                    "homepage": "https://www.drupal.org/user/3640109"
                 }
             ],
             "description": "Provides a field that allows a content entity to create and configure custom block instances.",
@@ -1718,13 +1679,19 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.20",
-                    "datestamp": "1574417581",
+                    "datestamp": "1561055630",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Dropdown toggle variable ignored when using links__dropbutton": "https://www.drupal.org/files/issues/2018-12-19/dropdown-without-default-button-3021413-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1772,10 +1739,13 @@
                 "shasum": "04bbd0fc440017fd0129dceae240a8bba409a450"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1545090480",
@@ -1802,21 +1772,21 @@
             "description": "Provides basic revert and update functionality for other modules",
             "homepage": "https://www.drupal.org/project/config_update",
             "support": {
-                "source": "https://git.drupalcode.org/project/config_update"
+                "source": "http://cgit.drupalcode.org/config_update"
             }
         },
         {
             "name": "drupal/core",
-            "version": "8.9.14",
+            "version": "8.9.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e"
+                "reference": "4804cb039c1e21f841dc4eccb24dc4a90c8280c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/84796e158cd3bd50af08974dd62931d0cc78dc7e",
-                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/4804cb039c1e21f841dc4eccb24dc4a90c8280c6",
+                "reference": "4804cb039c1e21f841dc4eccb24dc4a90c8280c6",
                 "shasum": ""
             },
             "require": {
@@ -2011,6 +1981,20 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
+                    "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/2018-10-26/2528214-47.patch",
+                    "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/2018-12-28/2580551-72.patch",
+                    "#states cannot check/uncheck 'radios' and 'checkboxes' elements": "https://www.drupal.org/files/issues/drupal-994360-74-states-checkboxes-checked.patch",
+                    "Multiple usages of FieldPluginBase::getEntity do not check for NULL, leading to WSOD": "https://www.drupal.org/files/issues/2019-11-14/3007424-68.patch",
+                    "Default role id causes issues with validation on VBO": "https://www.drupal.org/files/issues/2018-05-24/2974925-default-rid-config-causes-illegal-error.patch",
+                    "Ensure views exposed form in a form block keeps contextual arguments": "https://www.drupal.org/files/issues/2020-04-17/views-exposed-form-block-args-2821962-30-8.8-notest.patch",
+                    "Display Bug when using #states (Forms API) with Ajax Request": "https://www.drupal.org/files/issues/2019-11-19/1091852-104.patch",
+                    "Can't specify the language in TermStorage::loadTree": "https://www.drupal.org/files/issues/2020-09-08/drupal-termstorage-loadTree-lang-3123561-6-d8.patch",
+                    "Issue #3188258: Aggregation queries fail across entity references": "https://www.drupal.org/files/issues/2020-12-18/drupal-3188258-aggregation-across-entity-reference-fail-2.patch",
+                    "Pagination does not work correctly for comment fields that are rendered using #lazy_builder": "https://www.drupal.org/files/issues/2020-12-22/pagination-does-not-work-with-lazy-builder-3189538-2.patch",
+                    "Providing default route value for entity forms is not possible": "https://www.drupal.org/files/issues/2020-12-29/2921093-18.patch"
                 }
             },
             "autoload": {
@@ -2034,14 +2018,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "support": {
-                "source": "https://github.com/drupal/core/tree/8.9.14"
-            },
-            "time": "2021-04-20T23:05:40+00:00"
+            "time": "2021-05-05T11:28:48+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.7",
+            "version": "9.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2084,9 +2065,6 @@
             "keywords": [
                 "drupal"
             ],
-            "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.7"
-            },
             "time": "2020-08-07T22:30:13+00:00"
         },
         {
@@ -2104,10 +2082,13 @@
                 "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.5",
                     "datestamp": "1516357085",
@@ -2115,6 +2096,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Automated crop integration": "https://www.drupal.org/files/issues/2018-12-16/2830768-crop-automated_crop_integration-45.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2125,10 +2109,6 @@
                 {
                     "name": "Drupal Media Team",
                     "homepage": "https://www.drupal.org/user/3260690"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -2142,7 +2122,7 @@
             "description": "Provides storage and API for image crops.",
             "homepage": "https://www.drupal.org/project/crop",
             "support": {
-                "source": "https://git.drupalcode.org/project/crop",
+                "source": "http://cgit.drupalcode.org/crop",
                 "issues": "https://www.drupal.org/project/issues/crop"
             }
         },
@@ -2170,6 +2150,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.0-beta1",
                     "datestamp": "1568995088",
@@ -2214,6 +2197,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.2",
                     "datestamp": "1550728386",
@@ -2378,6 +2364,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1556799496",
@@ -2422,6 +2411,14 @@
                 {
                     "name": "See contributors",
                     "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
                 }
             ],
             "description": "Various blocks, pages, and functions for developers.",
@@ -2447,13 +2444,16 @@
                 "shasum": "48473adb20413babb548a2501e396e66f13c30f2"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1575458288",
+                    "datestamp": "1554020884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2615,9 +2615,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1582735747",
+                    "datestamp": "1559579884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2648,10 +2651,6 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
                 }
             ],
             "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
@@ -2682,6 +2681,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1570284187",
@@ -2689,6 +2691,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Module should declare dependency on drupal:field module": "https://www.drupal.org/files/issues/2020-01-31/entity_reference_revisions-3110377-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2783,10 +2788,13 @@
             },
             "require": {
                 "drupal/config_update": "^1.4",
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.8",
                     "datestamp": "1536512284",
@@ -2811,10 +2819,6 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
-                    "name": "donquixote",
-                    "homepage": "https://www.drupal.org/user/459338"
-                },
-                {
                     "name": "e2thex",
                     "homepage": "https://www.drupal.org/user/189123"
                 },
@@ -2823,16 +2827,8 @@
                     "homepage": "https://www.drupal.org/user/43670"
                 },
                 {
-                    "name": "flocondetoile",
-                    "homepage": "https://www.drupal.org/user/2006064"
-                },
-                {
                     "name": "jmiccolis",
                     "homepage": "https://www.drupal.org/user/31731"
-                },
-                {
-                    "name": "joseph.olstad",
-                    "homepage": "https://www.drupal.org/user/1321830"
                 },
                 {
                     "name": "mpotter",
@@ -2850,7 +2846,7 @@
             "description": "Enables administrators to package configuration into modules",
             "homepage": "https://www.drupal.org/project/features",
             "support": {
-                "source": "https://git.drupalcode.org/project/features"
+                "source": "http://cgit.drupalcode.org/features"
             }
         },
         {
@@ -2882,6 +2878,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Undefined property: stdClass::$region in field_group_form_process().": "https://www.drupal.org/files/issues/2020-06-15/3059614-37.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2942,6 +2941,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1488273785",
@@ -2964,7 +2966,7 @@
             "description": "Provides a service to manage file metadata.",
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
-                "source": "https://git.drupalcode.org/project/file_mdm"
+                "source": "http://cgit.drupalcode.org/file_mdm"
             }
         },
         {
@@ -3057,13 +3059,19 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-4.0-alpha3",
-                    "datestamp": "1572442085",
+                    "datestamp": "1521598850",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Add relationship to flagged entities when Flagging is base table": "https://www.drupal.org/files/issues/2723703_31.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3071,10 +3079,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
@@ -3111,7 +3115,7 @@
             "description": "Create customized flags that users can set on entities.",
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
-                "source": "https://git.drupalcode.org/project/flag"
+                "source": "http://cgit.drupalcode.org/flag"
             }
         },
         {
@@ -3315,6 +3319,16 @@
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Add computed field for Group reference": "https://www.drupal.org/files/issues/add-computed-field-without-FieldItemListComputedInterface-2718195-34.patch",
+                    "Use VBO together with group permission": "https://www.drupal.org/files/issues/2019-10-09/vbo-and-group-permission-3020883-10.patch",
+                    "Ability to use group tokens in node context": "https://www.drupal.org/files/issues/2018-12-19/group-2774827-41-gnode-tokens.patch",
+                    "Group: Don't try to re-save deleted entities": "https://www.drupal.org/files/issues/2018-11-01/3010896-02.patch",
+                    "Request membership feature": "https://www.drupal.org/files/issues/2019-07-04/group-request_membership_feature_grequest_module-2752603-110.patch",
+                    "Rely on toUrl defaults for Entity url link": "https://www.drupal.org/files/issues/2019-12-04/group-3098675-2.patch",
+                    "Group Invite": "https://www.drupal.org/files/issues/2020-03-26/ginvite_module_port-2801603-112.patch",
+                    "Cache context update": "https://www.drupal.org/files/issues/2018-05-04/group-cache-context-2882102-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3412,7 +3426,7 @@
                 "shasum": "0a61cfedc409c5ef448174f26060cd6c291d6a11"
             },
             "require": {
-                "drupal/core": "^8",
+                "drupal/core": "*",
                 "drupal/crop": "^1.0 || ^2.0"
             },
             "require-dev": {
@@ -3425,6 +3439,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1530698921",
@@ -3432,6 +3449,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Remove theme function override for verticalTabs": "https://www.drupal.org/files/issues/2019-02-13/3032584-verticaltabs-theme-override-removal-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3447,10 +3467,6 @@
                 {
                     "name": "Drupal media CI",
                     "homepage": "https://www.drupal.org/user/3057985"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "slashrsm",
@@ -3489,10 +3505,13 @@
                 "shasum": "656cf7dc3d54d81c5d6b227c550823a1720a5bc7"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.0",
                     "datestamp": "1555907887",
@@ -3500,6 +3519,10 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Make sure we grab active config for lazy settings": "https://www.drupal.org/files/issues/2019-05-23/3056630-2.patch",
+                    "Make sure lazy doesnt do anything on cron": "https://www.drupal.org/files/issues/2019-07-30/3071331-lazy-cron-empty-path-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3545,6 +3568,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
                     "datestamp": "1519314784",
@@ -3552,6 +3578,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Fix preview on node": "https://www.drupal.org/files/issues/2848080-2-preview-fails-on-node.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3624,8 +3653,9 @@
             "description": "Include CSS files using <link> element instead of @import.",
             "homepage": "https://www.drupal.org/project/link_css",
             "support": {
-                "source": "https://git.drupalcode.org/project/link_css"
-            }
+                "source": "http://cgit.drupalcode.org/link_css"
+            },
+            "time": "2016-11-08T03:19:30+00:00"
         },
         {
             "name": "drupal/mailsystem",
@@ -3706,13 +3736,16 @@
                 "shasum": "873b3d8030d47bd472d75472f293b7631a59eeaf"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "require-dev": {
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1570139286",
@@ -3769,7 +3802,7 @@
                 "shasum": "9acb04a741d80b4ab468d118a242271169d11f00"
             },
             "require": {
-                "drupal/core": "^8",
+                "drupal/core": "*",
                 "drupal/token": "^1.0"
             },
             "require-dev": {
@@ -3784,6 +3817,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1576870683",
@@ -3838,6 +3874,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-2.4",
                     "datestamp": "1522490884",
@@ -3861,7 +3900,7 @@
             "description": "Allows permissions to be set on each node option such as published and authoring information.",
             "homepage": "https://www.drupal.org/project/override_node_options",
             "support": {
-                "source": "https://git.drupalcode.org/project/override_node_options"
+                "source": "http://cgit.drupalcode.org/override_node_options"
             }
         },
         {
@@ -3900,6 +3939,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1581850829",
@@ -3907,6 +3949,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-07-10/paragraphs-set_langcode_widgets-2901390-29.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3966,6 +4011,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1575467285",
@@ -4018,17 +4066,24 @@
                 "shasum": "6690079948c3a6f4b36a5ea09bea590cd1db040f"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1572818586",
+                    "datestamp": "1527808680",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Private message unread messages fix": "https://www.drupal.org/files/issues/2018-06-08/2978324-getthreads-sort-order-2.patch",
+                    "Own send messages are shown as new messages": "https://www.drupal.org/files/issues/2019-02-05/private_message-message_count-2977310-8_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4041,30 +4096,18 @@
                     "homepage": "https://www.drupal.org/user/324696"
                 },
                 {
-                    "name": "anmolgoyal74",
-                    "homepage": "https://www.drupal.org/user/3560428"
-                },
-                {
-                    "name": "artem_sylchuk",
-                    "homepage": "https://www.drupal.org/user/2511902"
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
                 },
                 {
                     "name": "edutrul",
                     "homepage": "https://www.drupal.org/user/1621444"
-                },
-                {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
-                },
-                {
-                    "name": "phjou",
-                    "homepage": "https://www.drupal.org/user/3344054"
                 }
             ],
             "description": "A private message system for users to send messages to each other",
             "homepage": "https://www.drupal.org/project/private_message",
             "support": {
-                "source": "https://git.drupalcode.org/project/private_message"
+                "source": "http://cgit.drupalcode.org/private_message"
             }
         },
         {
@@ -4154,6 +4197,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1533913684",
@@ -4161,6 +4207,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "r4032login should perform access check for /user/login as anonymous user": "https://www.drupal.org/files/issues/2018-11-01/3010747-3-perform-access-check-as-an-user.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4197,7 +4246,7 @@
                     "homepage": "https://www.drupal.org/user/216580"
                 },
                 {
-                    "name": "ms2011",
+                    "name": "mikesmullin",
                     "homepage": "https://www.drupal.org/user/108440"
                 },
                 {
@@ -4234,9 +4283,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1576656784",
+                    "datestamp": "1561757585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4286,6 +4338,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1580498751",
@@ -4361,6 +4416,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "Ensure field definition allowed values callbacks are used for field filter callbacks": "https://www.drupal.org/files/issues/2020-06-03/2949022-12--views_filter_options_callback.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4475,9 +4533,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1579113187",
+                    "datestamp": "1553186885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4728,9 +4789,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1577708583",
+                    "datestamp": "1537557481",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4770,7 +4834,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "https://git.drupalcode.org/project/token"
+                "source": "http://cgit.drupalcode.org/token"
             }
         },
         {
@@ -4916,6 +4980,9 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.3",
                     "datestamp": "1583400005",
@@ -4932,27 +4999,23 @@
             "authors": [
                 {
                     "name": "Mladen Todorovic",
-                    "homepage": "https://www.drupal.org/user/157725",
+                    "homepage": "https://www.drupal.org/user/2103716",
                     "email": "mladen.todorovic@burda.com"
                 },
                 {
                     "name": "Christian Fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716",
+                    "homepage": "https://www.drupal.org/user/404865",
                     "email": "christian.fritsch@burda.com"
                 },
                 {
                     "name": "Daniel Bosen",
-                    "homepage": "https://www.drupal.org/user/404865",
+                    "homepage": "https://www.drupal.org/user/3453049",
                     "email": "daniel.bosen@burda.com"
                 },
                 {
                     "name": "Volker Killesreiter",
-                    "homepage": "https://www.drupal.org/user/3453049",
+                    "homepage": "https://www.drupal.org/user/3511180",
                     "email": "killesreiter@burda.com"
-                },
-                {
-                    "name": "thunderbot",
-                    "homepage": "https://www.drupal.org/user/3511180"
                 }
             ],
             "description": "This module offers supporting functionalities to make configuration updates easier.",
@@ -4989,6 +5052,10 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Translate dialog title": "https://www.drupal.org/files/issues/2018-03-16/url_embed_translate_dialog_title-2953591-2.patch",
+                    "Improve how the module deals with non-embeddable URLs & WSODs (See: https://www.drupal.org/project/social/issues/2930457#comment-13973067)": "https://www.drupal.org/files/issues/2021-01-22/urlembed-non-embeddable-urls-2761187-opensocial-combined-21.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5048,9 +5115,12 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-3.4",
-                    "datestamp": "1582575462",
+                    "datestamp": "1580924754",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5060,6 +5130,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "Make sure select all gets fired for socialbase theme": "https://www.drupal.org/files/issues/2019-09-19/3042494-trigger-vbo-action-on-jquery-checkbox-change-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5122,6 +5195,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Headers in table format repeat on load more instead of adding rows": "https://www.drupal.org/files/issues/2019-08-15/table_tbody_append-2899705-26.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5178,6 +5254,10 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "votingapi_views_data_alter uses incorrect empty check for missing entity error handling": "https://www.drupal.org/files/issues/2020-01-31/votingapi-3110353-2.patch",
+                    "#3048085 - fix time() callback filling up the logs": "https://www.drupal.org/files/issues/2019-05-02/votingapi-timecallback-3048085-1-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5185,10 +5265,6 @@
                 "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "TR",
-                    "homepage": "https://www.drupal.org/user/202830"
-                },
                 {
                     "name": "eaton",
                     "homepage": "https://www.drupal.org/user/16496"
@@ -5276,12 +5352,6 @@
                 "rdfa",
                 "sparql"
             ],
-            "support": {
-                "forum": "http://groups.google.com/group/easyrdf/",
-                "irc": "irc://chat.freenode.net/easyrdf",
-                "issues": "http://github.com/njh/easyrdf/issues",
-                "source": "https://github.com/easyrdf/easyrdf/tree/0.9.1"
-            },
             "time": "2015-02-27T09:45:49+00:00"
         },
         {
@@ -5340,10 +5410,6 @@
                 "validation",
                 "validator"
             ],
-            "support": {
-                "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
-            },
             "funding": [
                 {
                     "url": "https://github.com/egulias",
@@ -5354,16 +5420,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v3.4.15",
+            "version": "v3.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "5028323230da075d6f515448fe62dfb179b9bde8"
+                "reference": "fe226113966ed8af98000a4514c775492e40a944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/5028323230da075d6f515448fe62dfb179b9bde8",
-                "reference": "5028323230da075d6f515448fe62dfb179b9bde8",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/fe226113966ed8af98000a4514c775492e40a944",
+                "reference": "fe226113966ed8af98000a4514c775492e40a944",
                 "shasum": ""
             },
             "require": {
@@ -5378,6 +5444,11 @@
                 "phpunit/phpunit": "^5.7|^6.0|^7.0"
             },
             "type": "library",
+            "extra": {
+                "patches_applied": {
+                    "Issue #3110341: Embedded Vimeo videos are sometimes blocked when hosted on cloud hosting": "https://www.drupal.org/files/issues/2020-01-31/3110341-vendor-fix-vimeo-adapter.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Embed\\": "src"
@@ -5404,25 +5475,20 @@
                 "opengraph",
                 "twitter cards"
             ],
-            "support": {
-                "email": "oom@oscarotero.com",
-                "issues": "https://github.com/oscarotero/Embed/issues",
-                "source": "https://github.com/oscarotero/Embed/tree/v3.4.15"
-            },
-            "time": "2021-04-02T10:59:24+00:00"
+            "time": "2021-05-07T12:38:54+00:00"
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "10.1.1",
+            "version": "10.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "955168ade5170dd4980acfc0f17909ffff66bb21"
+                "reference": "469e7e6978ae59d543984fe26e642b87366e55fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/955168ade5170dd4980acfc0f17909ffff66bb21",
-                "reference": "955168ade5170dd4980acfc0f17909ffff66bb21",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/469e7e6978ae59d543984fe26e642b87366e55fb",
+                "reference": "469e7e6978ae59d543984fe26e642b87366e55fb",
                 "shasum": ""
             },
             "require": {
@@ -5452,7 +5518,7 @@
                 "drupal/file_mdm": "1.1",
                 "drupal/flag": "4.0-alpha3",
                 "drupal/gin": "3.0-alpha20",
-                "drupal/gin_toolbar": "^1.0@beta",
+                "drupal/gin_toolbar": "1.0-beta14",
                 "drupal/graphql": "^4.0",
                 "drupal/group": "1.0-rc5",
                 "drupal/image_effects": "3.1",
@@ -5617,10 +5683,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/10.1.1"
-            },
-            "time": "2021-05-04T08:11:29+00:00"
+            "time": "2021-05-11T15:48:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5687,10 +5750,6 @@
                 "rest",
                 "web service"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5"
-            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -5817,10 +5876,6 @@
                 "uri",
                 "url"
             ],
-            "support": {
-                "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.2"
-            },
             "time": "2021-04-26T09:17:50+00:00"
         },
         {
@@ -5937,14 +5992,6 @@
                 "psr",
                 "psr-7"
             ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-diactoros/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-diactoros/issues",
-                "rss": "https://github.com/laminas/laminas-diactoros/releases.atom",
-                "source": "https://github.com/laminas/laminas-diactoros"
-            },
             "time": "2020-03-23T15:28:28+00:00"
         },
         {
@@ -5994,14 +6041,6 @@
                 "escaper",
                 "laminas"
             ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-escaper/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-escaper/issues",
-                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
-                "source": "https://github.com/laminas/laminas-escaper"
-            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -6132,14 +6171,6 @@
                 "laminas",
                 "stdlib"
             ],
-            "support": {
-                "chat": "https://laminas.dev/chat",
-                "docs": "https://docs.laminas.dev/laminas-stdlib/",
-                "forum": "https://discourse.laminas.dev",
-                "issues": "https://github.com/laminas/laminas-stdlib/issues",
-                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
-                "source": "https://github.com/laminas/laminas-stdlib"
-            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -6347,10 +6378,6 @@
                 "exif",
                 "image"
             ],
-            "support": {
-                "issues": "https://github.com/lsolesen/pel/issues",
-                "source": "https://github.com/lsolesen/pel/tree/master"
-            },
             "time": "2017-02-03T11:58:58+00:00"
         },
         {
@@ -6416,10 +6443,6 @@
                 "serializer",
                 "xml"
             ],
-            "support": {
-                "issues": "https://github.com/Masterminds/html5-php/issues",
-                "source": "https://github.com/Masterminds/html5-php/tree/2.7.4"
-            },
             "time": "2020-10-01T13:52:52+00:00"
         },
         {
@@ -7075,10 +7098,6 @@
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
-            "support": {
-                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
-                "source": "https://github.com/pear/Console_Getopt"
-            },
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
@@ -7123,10 +7142,6 @@
                 }
             ],
             "description": "Minimal set of PEAR core files to be used as composer dependency",
-            "support": {
-                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR",
-                "source": "https://github.com/pear/pear-core-minimal"
-            },
             "time": "2019-11-19T19:00:24+00:00"
         },
         {
@@ -7223,10 +7238,6 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "support": {
-                "issues": "https://github.com/PhenX/php-font-lib/issues",
-                "source": "https://github.com/PhenX/php-font-lib/tree/master"
-            },
             "time": "2017-02-11T10:58:43+00:00"
         },
         {
@@ -7325,9 +7336,6 @@
                 "request",
                 "response"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
-            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -7375,9 +7383,6 @@
                 "psr",
                 "psr-3"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.4"
-            },
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
@@ -7418,10 +7423,6 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -7472,10 +7473,6 @@
             "keywords": [
                 "stack"
             ],
-            "support": {
-                "issues": "https://github.com/stackphp/builder/issues",
-                "source": "https://github.com/stackphp/builder/tree/v1.0.6"
-            },
             "time": "2020-01-30T12:17:27+00:00"
         },
         {
@@ -7610,10 +7607,6 @@
                 "database",
                 "routing"
             ],
-            "support": {
-                "issues": "https://github.com/symfony-cmf/routing/issues",
-                "source": "https://github.com/symfony-cmf/routing/tree/1.4"
-            },
             "time": "2017-05-09T08:10:41+00:00"
         },
         {
@@ -7665,9 +7658,6 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/class-loader/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7749,9 +7739,6 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/console/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7814,9 +7801,6 @@
             ],
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v5.3.0-BETA1"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7883,9 +7867,6 @@
             ],
             "description": "Provides tools to ease debugging PHP code",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/debug/tree/v4.4.22"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7966,9 +7947,6 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8042,9 +8020,6 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8108,9 +8083,6 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8210,9 +8182,6 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8688,9 +8657,6 @@
                 "portable",
                 "shim"
             ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php56/tree/v1.20.0"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8756,9 +8722,6 @@
                 "portable",
                 "shim"
             ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php70/tree/v1.20.0"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -8976,9 +8939,6 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/process/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9058,10 +9018,6 @@
                 "psr-17",
                 "psr-7"
             ],
-            "support": {
-                "issues": "https://github.com/symfony/psr-http-message-bridge/issues",
-                "source": "https://github.com/symfony/psr-http-message-bridge/tree/master"
-            },
             "time": "2019-03-11T18:22:33+00:00"
         },
         {
@@ -9133,9 +9089,6 @@
                 "uri",
                 "url"
             ],
-            "support": {
-                "source": "https://github.com/symfony/routing/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9224,9 +9177,6 @@
             ],
             "description": "Symfony Serializer Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/serializer/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9306,9 +9256,6 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/translation/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9404,9 +9351,6 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/validator/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9493,9 +9437,6 @@
                 "debug",
                 "dump"
             ],
-            "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v4.4.22"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9564,9 +9505,6 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/yaml/tree/v3.4.47"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9698,10 +9636,6 @@
             "keywords": [
                 "templating"
             ],
-            "support": {
-                "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v1.44.2"
-            },
             "funding": [
                 {
                     "url": "https://github.com/fabpot",
@@ -9763,24 +9697,20 @@
                 "security",
                 "stream-wrapper"
             ],
-            "support": {
-                "issues": "https://github.com/TYPO3/phar-stream-wrapper/issues",
-                "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/v3.1.6"
-            },
             "time": "2020-11-07T09:06:16+00:00"
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.6.2",
+            "version": "v14.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "bcbb6926bbf2d0cf466c63d0b9edc90e44d5dd3f"
+                "reference": "34aa6dd54cd2ebdf8f36cafe817323333f7eb6ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/bcbb6926bbf2d0cf466c63d0b9edc90e44d5dd3f",
-                "reference": "bcbb6926bbf2d0cf466c63d0b9edc90e44d5dd3f",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/34aa6dd54cd2ebdf8f36cafe817323333f7eb6ba",
+                "reference": "34aa6dd54cd2ebdf8f36cafe817323333f7eb6ba",
                 "shasum": ""
             },
             "require": {
@@ -9823,17 +9753,13 @@
                 "api",
                 "graphql"
             ],
-            "support": {
-                "issues": "https://github.com/webonyx/graphql-php/issues",
-                "source": "https://github.com/webonyx/graphql-php/tree/v14.6.2"
-            },
             "funding": [
                 {
                     "url": "https://opencollective.com/webonyx-graphql-php",
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-04-23T09:26:03+00:00"
+            "time": "2021-05-11T12:37:43+00:00"
         },
         {
             "name": "zaporylie/composer-drupal-optimizations",
@@ -9876,10 +9802,6 @@
                 }
             ],
             "description": "Composer plugin to improve composer performance for Drupal projects",
-            "support": {
-                "issues": "https://github.com/zaporylie/composer-drupal-optimizations/issues",
-                "source": "https://github.com/zaporylie/composer-drupal-optimizations/tree/1.2.0"
-            },
             "time": "2020-10-22T13:26:00+00:00"
         }
     ],
@@ -9893,5 +9815,5 @@
         "php": "^7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
