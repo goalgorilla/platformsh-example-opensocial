@@ -28,7 +28,7 @@
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "html/"
+                "web-root": "web/"
             }
         },
         "installer-types": [
