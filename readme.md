@@ -1,4 +1,4 @@
-# Open Social Platform.sh trial!#
+# Open Social Platform.sh trial!
 
 Template for the Open Social Platform.sh trials.
 
