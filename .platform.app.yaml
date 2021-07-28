@@ -14,11 +14,6 @@ dependencies:
         drupal/console: "@stable"
         composer/composer: '^2'
 
-runtime:
-    # Enable the redis extension so Drupal can communicate with the Redis cache.
-    extensions:
-        - redis
-
 # The build-time dependencies of the app.
 dependencies:
     php:
@@ -32,7 +27,7 @@ dependencies:
 relationships:
     database: "mysqldb:mysql"
 #    solr: "solrsearch:solr"
-    redis: 'cache:redis'
+#    redis: 'cache:redis'
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
