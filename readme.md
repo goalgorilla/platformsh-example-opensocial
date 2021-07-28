@@ -21,12 +21,10 @@ How to use:
 3. Change the composer.json file to your liking.
     E.g. change open_social version or add new modules.
 
-4. Run composer install in this directory.
-
-5. Add everything to a new commit, including composer.lock.
+4. Commit the changes.
     ````
     git add .
-    git remote add platform [id]@git.[region].platform.sh:[id].git
+    git commit -m "Customizations"
     git push -u platform master
     ````
 
