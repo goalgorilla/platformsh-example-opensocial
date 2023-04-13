@@ -1,30 +1,30 @@
-# Open Social Platform.sh trial!#
+# Open Social Platform.sh trial!
 
 Template for the Open Social Platform.sh trials.
 
 How to use:
 
-1. Create a new project on Platform.sh
-    Configure the project by selecting a name and the necessary resources, etc.
-    Make sure to select that you want to import "an existing project".
-    You should see instructions to push existing code to platform.
+1. Clone this repository into a new directory and enter this directory.
+
+2. Create a new project on Platform.sh and choose "create from scratch"
+    Once the project is built, you'll see a step to [set Platform.sh as remote](https://docs.platform.sh/gettingstarted/introduction/own-code/create-project.html)
 
     ````
     git remote add platform [id]@git.[region].platform.sh:[id].git
-    git push -u platform master
     ````
-
-2. Clone this repository into a new directory and go to this directory.
+    
+    Or if you're using the Platform CLI:
+    ````
+    platform project:set-remote <project ID>
+    ````
 
 3. Change the composer.json file to your liking.
     E.g. change open_social version or add new modules.
 
-4. Run composer install in this directory.
-
-5. Add everything to a new commit, including composer.lock.
+4. Commit the changes.
     ````
     git add .
-    git remote add platform [id]@git.[region].platform.sh:[id].git
+    git commit -m "Customizations"
     git push -u platform master
     ````
 

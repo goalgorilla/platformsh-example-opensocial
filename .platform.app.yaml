@@ -5,11 +5,14 @@
 name: app
 
 # The runtime the application uses.
-type: "php:7.3"
+type: "php:7.4"
 
-# Configuration of the build of this application.
-build:
-    flavor: composer
+# The build-time dependencies of the app.
+dependencies:
+    php:
+        drush/drush: "^8.0"
+        drupal/console: "@stable"
+        composer/composer: '^2'
 
 # The build-time dependencies of the app.
 dependencies:
@@ -24,7 +27,65 @@ dependencies:
 relationships:
     database: "mysqldb:mysql"
 #    solr: "solrsearch:solr"
-#    redis: "rediscache:redis"
+#    redis: 'cache:redis'
+
+# The size of the persistent disk of the application (in MB).
+disk: 2048
+
+# The mounts that will be performed when the package is deployed.
+mounts:
+    # The default Drupal files directory.
+    '/web/sites/default/files':
+        source: local
+        source_path: 'files'
+    # Drupal gets its own dedicated tmp directory. The settings.platformsh.php
+    # file will automatically configure Drupal to use this directory.
+    '/tmp':
+        source: local
+        source_path: 'tmp'
+    # Private file uploads are stored outside the web root. The settings.platformsh.php
+    # file will automatically configure Drupal to use this directory.
+    '/private':
+        source: local
+        source_path: 'private'
+    # Drush needs a scratch space for its own caches.
+    '/.drush':
+        source: local
+        source_path: 'drush'
+    # Drush will try to save backups to this directory, so it must be
+    # writeable even though you will almost never need to use it.
+    '/drush-backups':
+        source: local
+        source_path: 'drush-backups'
+    # Drupal Console will try to save backups to this directory, so it must be
+    # writeable even though you will almost never need to use it.
+    '/.console':
+        source: local
+        source_path: 'console'
+
+# Configuration of the build of this application.
+build:
+    # Automatically run `composer install` on every build.
+    flavor: composer
+
+# The hooks executed at various points in the lifecycle of the application.
+hooks:
+    # The build hook runs after Composer to finish preparing up your code.
+    # No services are available but the disk is writeable.
+    build: |
+        set -e
+    # The deploy hook runs after your application has been deployed and started.
+    # Code cannot be modified at this point but the database is available.
+    # The site is not accepting requests while this script runs so keep it
+    # fast.
+    deploy: |
+      set -e
+      php ./drush/platformsh_generate_drush_yml.php
+      cd web
+      drush -y cache-rebuild
+      drush -y updatedb
+      drush -y fra --bundle=social
+      drush -y entup
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -59,6 +120,13 @@ web:
                 '^/sitemap\.xml$':
                     allow: true
 
+                # Deny direct access to configuration files.
+                '^/sites/sites\.php$':
+                    scripts: false
+                '^/sites/[^/]+/settings.*?\.php$':
+                    scripts: false
+
+        # The files directory has its own special configuration rules.
         '/sites/default/files':
             # Allow access to all files in the public files directory.
             allow: true
@@ -66,33 +134,13 @@ web:
             passthru: '/index.php'
             root: 'web/sites/default/files'
 
-            # Do not execute PHP scripts.
+            # Do not execute PHP scripts from the writeable mount.
             scripts: false
 
             rules:
                 # Provide a longer TTL (2 weeks) for aggregated CSS and JS files.
-                '^/sites/default/files/(css|jss)':
+                '^/sites/default/files/(css|js)':
                     expires: 2w
-
-# The size of the persistent disk of the application (in MB).
-disk: 2048
-
-# The mounts that will be performed when the package is deployed.
-mounts:
-    "/web/sites/default/files": "shared:files/files"
-    "/tmp": "shared:files/tmp"
-    "/private": "shared:files/private"
-
-# The hooks executed at various points in the lifecycle of the application.
-hooks:
-    # We run deploy hook after your application has been deployed and started.
-    # @TODO Re-import configuration
-    deploy: |
-      cd web
-      drush -y cache-rebuild
-      drush -y updatedb
-      drush -y fra --bundle=social
-      drush -y entup
 
 # The configuration of scheduled execution.
 # @TODO Add more crons to make sure the stream is up to date.
